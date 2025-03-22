@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
+
+
 header {
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 1% 5%;
+    padding: 1% 7%;
     justify-content: space-between;
     align-items: center;
     top: 0;
     z-index: 3;
+    background: rgba(0, 0, 0, 0.5);
+    /* Полупрозрачный черный */
+    backdrop-filter: blur(10px);
+    /* Блюр заднего фона */
+    -webkit-backdrop-filter: blur(10px);
 
 
     nav {
@@ -31,7 +38,7 @@ header {
 
     h1 {
         font-family: "Playfair Display", serif;
-        font-size: 55px;
+        font-size: 45px;
         font-weight: 400;
         color: white;
     }
@@ -56,24 +63,7 @@ main {
 
 
 
-        .sec_one::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            /* Затемнение (можно менять прозрачность) */
-            z-index: 1;
-            /* Поверх фона */
-        }
 
-        .sec_one * {
-            position: relative;
-            z-index: 2;
-            /* Чтобы контент был сверху */
-        }
 
 
         h1 {
@@ -113,6 +103,23 @@ main {
         button:active {
             scale: .9;
         }
+    }
+
+    .sec_one::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    .sec_one * {
+        position: relative;
+        z-index: 2;
+        /* Чтобы контент был сверху */
     }
 
     .sec_two {
@@ -129,24 +136,7 @@ main {
 
 
 
-        .sec_two::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            /* Затемнение (можно менять прозрачность) */
-            z-index: 1;
-            /* Поверх фона */
-        }
 
-        .sec_two * {
-            position: relative;
-            z-index: 2;
-            /* Чтобы контент был сверху */
-        }
 
 
         h1 {
@@ -188,6 +178,26 @@ main {
             scale: .9;
         }
 
+    }
+
+    .sec_two::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        min-height: inherit;
+        /* Затемнение (можно менять прозрачность) */
+        z-index: 1;
+        /* Поверх фона */
+    }
+
+    .sec_two * {
+        position: relative;
+        z-index: 2;
+        /* Чтобы контент был сверху */
     }
 
     .sec_three {
@@ -198,30 +208,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30vh;
+        padding-top: 20vh;
         color: white;
         background: url('./images/sec_three.svg') center/cover no-repeat;
 
 
 
-        .sec_three::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            /* Затемнение (можно менять прозрачность) */
-            z-index: 1;
-            /* Поверх фона */
-        }
 
-        .sec_three * {
-            position: relative;
-            z-index: 2;
-            /* Чтобы контент был сверху */
-        }
 
 
         h1 {
@@ -239,7 +232,7 @@ main {
             font-size: 1.5rem;
             line-height: 1.6;
             text-align: center;
-            margin-bottom: 20vh;
+            margin-bottom: 10vh;
         }
 
         button {
@@ -263,6 +256,26 @@ main {
             scale: .9;
         }
 
+    }
+
+    .sec_three::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        min-height: inherit;
+        /* Затемнение (можно менять прозрачность) */
+        z-index: 1;
+        /* Поверх фона */
+    }
+
+    .sec_three * {
+        position: relative;
+        z-index: 2;
+        /* Чтобы контент был сверху */
     }
 
     .sec_four {
@@ -273,30 +286,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30vh;
+        padding-top: 20vh;
         color: white;
         background: url('./images/sec_four.svg') center/cover no-repeat;
 
 
 
-        .sec_four::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            /* Затемнение (можно менять прозрачность) */
-            z-index: 1;
-            /* Поверх фона */
-        }
 
-        .sec_four * {
-            position: relative;
-            z-index: 2;
-            /* Чтобы контент был сверху */
-        }
 
 
         h1 {
@@ -314,7 +310,7 @@ main {
             font-size: 1.5rem;
             line-height: 1.6;
             text-align: center;
-            margin-bottom: 20vh;
+            margin-bottom: 10vh;
         }
 
         button {
@@ -339,6 +335,26 @@ main {
 
     }
 
+    .sec_four::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        min-height: inherit;
+        /* Затемнение (можно менять прозрачность) */
+        z-index: 1;
+        /* Поверх фона */
+    }
+
+    .sec_four * {
+        position: relative;
+        z-index: 2;
+        /* Чтобы контент был сверху */
+    }
+
     .sec_five {
 
         position: relative;
@@ -347,30 +363,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30vh;
+        padding-top: 20vh;
         color: white;
         background: url('./images/sec_five.svg') center/cover no-repeat;
 
 
 
-        .sec_five::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            /* Затемнение (можно менять прозрачность) */
-            z-index: 1;
-            /* Поверх фона */
-        }
 
-        .sec_five * {
-            position: relative;
-            z-index: 2;
-            /* Чтобы контент был сверху */
-        }
 
 
         h1 {
@@ -388,7 +387,7 @@ main {
             font-size: 1.5rem;
             line-height: 1.6;
             text-align: center;
-            margin-bottom: 20vh;
+            margin-bottom: 10vh;
         }
 
         button {
@@ -463,6 +462,25 @@ main {
     }
 }
 
+.sec_five::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Затемнение (можно менять прозрачность) */
+    z-index: 1;
+    /* Поверх фона */
+}
+
+.sec_five * {
+    position: relative;
+    z-index: 2;
+    /* Чтобы контент был сверху */
+}
+
 footer {
     background-color: black;
     display: flex;
@@ -489,3 +507,241 @@ footer {
         }
     }
 }
+
+.burger_menu {
+    width: 40px;
+    /* Задаем фиксированную ширину */
+    height: 40px;
+    /* Задаем фиксированную высоту */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+
+    display: none;
+}
+
+.burger_menu_container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 40%;
+    /* Или задай нужную ширину */
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    padding: 10vh 5%;
+    z-index: 1000;
+
+    a {
+        margin-bottom: 2vh;
+        display: flex;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .close {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+.burger_menu_container.open {
+    transform: translateX(0);
+}
+
+body.menu-open {
+    overflow-x: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+.dimmed * {
+    opacity: 0.9;
+    transition: opacity 0.2s linear;
+}
+
+.dimmed .burger_menu_container {
+    opacity: 1 !important;
+    /* Меню остается без затемнения */
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 2% 5% 2% 3%;
+        background: rgba(0, 0, 0, 0.5);
+        /* Полупрозрачный черный */
+        backdrop-filter: blur(10px);
+        /* Блюр заднего фона */
+        -webkit-backdrop-filter: blur(10px);
+
+        h1 {
+            font-size: 40px;
+        }
+
+        nav a {
+            font-size: 20px;
+            margin-left: 3%;
+        }
+    }
+
+    .sec_one,
+    .sec_two,
+    .sec_three,
+    .sec_four,
+    .sec_five {
+        padding-top: 20vh;
+
+        h1 {
+            font-size: 6rem !important;
+        }
+
+        p {
+            font-size: 1.3rem !important;
+            margin-bottom: 15vh !important
+        }
+    }
+
+    .sec_six {
+        h1 {
+            font-size: 4rem !important;
+        }
+
+        p {
+            font-size: 1.3rem !important;
+            margin-bottom: 10vh !important
+        }
+
+        button {
+            font-size: 14px !important;
+        }
+    }
+
+    footer {
+        justify-content: center;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 786px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        /* Полупрозрачный черный */
+        backdrop-filter: blur(10px);
+        /* Блюр заднего фона */
+        -webkit-backdrop-filter: blur(10px);
+
+
+        nav {
+            display: none;
+            margin-top: 10px;
+
+            a {
+                font-size: 18px;
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .burger_menu {
+        display: flex;
+    }
+
+    .sec_one,
+    .sec_two,
+    .sec_three,
+    .sec_four,
+    .sec_five {
+        padding-top: 15vh;
+
+        h1 {
+            font-size: 4rem !important;
+        }
+
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    .sec_six {
+        h1 {
+            font-size: 3rem !important;
+        }
+
+        p {
+            font-size: 1.2rem !important;
+            margin-bottom: 10vh !important
+        }
+
+        button {
+            font-size: 12px !important;
+        }
+    }
+
+    button {
+        font-size: 12px !important;
+        padding: 2% 5% !important;
+    }
+
+    footer {
+        gap: 10%;
+        justify-content: space-between;
+
+        .right {
+            flex-direction: column;
+            gap: 1vh;
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sec_one,
+    .sec_two,
+    .sec_three,
+    .sec_four,
+    .sec_five {
+        height: auto;
+        padding: 10vh 5%;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    button {
+        font-size: 10px;
+        padding: 3% 8%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 5vh 5%;
+
+        .right {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
