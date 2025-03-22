@@ -53,60 +53,439 @@ main {
         padding-top: 30vh;
         color: white;
         background: url('./images/sec_one_bg.svg') center/cover no-repeat;
-    }
 
 
-    .sec_one::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-        /* Затемнение (можно менять прозрачность) */
-        z-index: 1;
-        /* Поверх фона */
-    }
 
-    .sec_one * {
-        position: relative;
-        z-index: 2;
-        /* Чтобы контент был сверху */
-    }
+        .sec_one::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* Затемнение (можно менять прозрачность) */
+            z-index: 1;
+            /* Поверх фона */
+        }
+
+        .sec_one * {
+            position: relative;
+            z-index: 2;
+            /* Чтобы контент был сверху */
+        }
 
 
-    h1 {
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
-        font-size: 8rem;
-        line-height: 1.1;
-        text-align: center;
-        margin-bottom: 5vh;
-    }
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
 
-    p {
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 1.6;
-        text-align: center;
-        margin-bottom: 20vh;
-    }
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20vh;
+        }
 
-    button {
-        padding: 1%;
-        font-size: 14px;
-        background: none;
-        color: white;
-        border: 1px solid #fff;
-        border-radius: 60px;
-        cursor: pointer;
-        transition: 0.2s;
-        margin-bottom: 10vh;
+        button {
+            padding: 1%;
+            font-size: 14px;
+            background: none;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
 
         button:active {
+            scale: .9;
+        }
+    }
+
+    .sec_two {
+
+        position: relative;
+        /* Добавляем, чтобы работал ::before */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30vh;
+        color: white;
+        background: url('./images/sec_two.svg') center/cover no-repeat;
+
+
+
+        .sec_two::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* Затемнение (можно менять прозрачность) */
+            z-index: 1;
+            /* Поверх фона */
+        }
+
+        .sec_two * {
+            position: relative;
+            z-index: 2;
+            /* Чтобы контент был сверху */
+        }
+
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20vh;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 14px;
+            background: none;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+
+        }
+
+        button:hover {
             opacity: 0.7;
+        }
+
+        button:active {
+            scale: .9;
+        }
+
+    }
+
+    .sec_three {
+
+        position: relative;
+        /* Добавляем, чтобы работал ::before */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30vh;
+        color: white;
+        background: url('./images/sec_three.svg') center/cover no-repeat;
+
+
+
+        .sec_three::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* Затемнение (можно менять прозрачность) */
+            z-index: 1;
+            /* Поверх фона */
+        }
+
+        .sec_three * {
+            position: relative;
+            z-index: 2;
+            /* Чтобы контент был сверху */
+        }
+
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20vh;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 14px;
+            background: none;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        button:active {
+            scale: .9;
+        }
+
+    }
+
+    .sec_four {
+
+        position: relative;
+        /* Добавляем, чтобы работал ::before */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30vh;
+        color: white;
+        background: url('./images/sec_four.svg') center/cover no-repeat;
+
+
+
+        .sec_four::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* Затемнение (можно менять прозрачность) */
+            z-index: 1;
+            /* Поверх фона */
+        }
+
+        .sec_four * {
+            position: relative;
+            z-index: 2;
+            /* Чтобы контент был сверху */
+        }
+
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20vh;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 14px;
+            background: none;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        button:active {
+            scale: .9;
+        }
+
+    }
+
+    .sec_five {
+
+        position: relative;
+        /* Добавляем, чтобы работал ::before */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30vh;
+        color: white;
+        background: url('./images/sec_five.svg') center/cover no-repeat;
+
+
+
+        .sec_five::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            /* Затемнение (можно менять прозрачность) */
+            z-index: 1;
+            /* Поверх фона */
+        }
+
+        .sec_five * {
+            position: relative;
+            z-index: 2;
+            /* Чтобы контент был сверху */
+        }
+
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 8rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20vh;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 14px;
+            background: none;
+            color: white;
+            border: 1px solid #fff;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        button:active {
+            scale: .9;
+        }
+
+    }
+
+    .sec_six {
+        background-color: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+
+        h1 {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 6rem;
+            line-height: 1.1;
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 15vh;
+        }
+
+        button {
+            padding: 1%;
+            font-size: 16px;
+            background: white;
+            color: black;
+            border: 1px solid black;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 10vh;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        button:active {
+            scale: .9;
+        }
+    }
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 10% 5vh 5%;
+    border-top: 1px solid gray;
+
+    .left {
+        font-family: "Playfair Display", serif;
+        color: gray;
+        font-size: 16px;
+    }
+
+    .right {
+        display: flex;
+        gap: 7%;
+        white-space: nowrap;
+
+        a {
+            font-family: "Playfair Display", serif;
+            text-decoration: none;
+            color: gray;
+            font-size: 16px;
         }
     }
 }
